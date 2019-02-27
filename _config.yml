@@ -6,7 +6,7 @@
 since: 2014
 
 # Custom your favicon.ico in `site/source`
-favicon: https://raw.githubusercontent.com/itweet/itweet.github.io/master/favicon.ico
+favicon: favicon.ico
 
 # Set feed link (false | default | your feed link)
 # false: disable
