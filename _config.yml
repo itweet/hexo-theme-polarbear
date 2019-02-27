@@ -6,7 +6,7 @@
 since: 2014
 
 # Custom your favicon.ico in `site/source`
-favicon: /favicon.ico
+favicon: https://raw.githubusercontent.com/itweet/itweet.github.io/master/favicon.ico
 
 # Set feed link (false | default | your feed link)
 # false: disable
@@ -19,6 +19,7 @@ rss: default
 menu:
   Archives: /archives
   About: /about
+  RSS: /atom.xml
 
 # ===========================================
 # Widget Settings
@@ -30,13 +31,19 @@ menu:
 #   content: Add your html code in here. Example: <p>testing...</p>
 widget:
   Tags: true
-  Categories: false
-  Custom: false
+  Categories: true
+  Custom: true
 
 widget_custom:
-    title: Test
-    content: <p>testing...</p>
+    title: 技术人的日常
+    content: <p> ID：Whoami </p>
 
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
+    
 # ===========================================
 # Theme Settings
 # ===========================================
@@ -59,7 +66,6 @@ google_analytics:
 duoshuo_shortname:
 # Disqus
 disqus_shortname:
-
 
 # ===========================================
 # Version
