@@ -37,13 +37,19 @@
 
     {% if not is_home() %}
       <footer class="post-footer">
-		{% if post.tags and post.tags.length %}
-		<div class="post-tags">
-		  {% for tag in post.tags %}
-			<a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
-		  {% endfor %}
-		</div>
-		{% endif %}
+      
+      <div class="post-content">
+        <p><img src="https://github.com/itweet/labs/raw/master/common/img/weixin_public.gif" alt="Whoami公众号"></p>
+        <p>原创文章，转载请注明： 转载自<a href="http://www.itweet.cn" target="_blank" rel="noopener"> Itweet </a>的博客<br>版权声明：自由转载-保持署名-非商业性-禁止演绎（<a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank" rel="noopener">创意共享3.0许可证</a>)<br>本博客的文章集合: <a href="http://www.itweet.cn/archives/" target="_blank" rel="noopener">http://www.itweet.cn/archives/</a></p>
+      </div>
+
+    {% if post.tags and post.tags.length %}
+    <div class="post-tags">
+      {% for tag in post.tags %}
+      <a href="{{ url_for(tag.path) }}">{{ tag.name }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
 
         {# Post Pagination #}
         {% include "../_partial/pagination.swig" %}
